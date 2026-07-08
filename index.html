@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        header{
-            background-color: darkorchid;
-            color: black;
-            text-align: center;
-            max-width: 800px ;
-            margin: auto;
-            padding: 16px;
-        }
-        main{
-            background-color: darkmagenta;
-            color: darkgray;
-            max-width: 800px;
-            margin: auto;
-
-        }
-    </style>
+    <title>Cuidados com Pets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>cuidados com pets</h1>
-        <p>Os cuidados com pets são essenciais para garantir a saúde, o bem-estar e a qualidade de vida dos animais de estimação. Isso inclui oferecer alimentação adequada, água limpa, higiene, vacinação, consultas veterinárias, exercícios físicos e muito carinho. Além disso, é importante proporcionar um ambiente seguro e respeitar as necessidades de cada animal. Cuidar de um pet é um ato de responsabilidade e amor, garantindo que ele viva uma vida saudável, feliz e protegida.</p>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Cuidados com Pets</h1>
+            <p>Os cuidados com pets são essenciais para garantir a saúde, o bem-estar e a qualidade de vida dos animais de estimação. Isso inclui oferecer alimentação adequada, água limpa, higiene, vacinação, consultas veterinárias, exercícios físicos e muito carinho.</p>
+        </div>
     </header>    
-    <main>
-        <img src="Gemini_Generated_Image_Iem9uflem9 (3).png"
-        <h2>Dicas e informações para cuidar melhor do seu pet</h2>
-        <p>Os cuidados com pets são fundamentais para garantir que os animais vivam com saúde, segurança e qualidade de vida. Isso inclui oferecer uma alimentação equilibrada, água limpa e fresca, manter a vacinação e a vermifugação em dia, realizar consultas periódicas com o médico-veterinário e cuidar da higiene, como banhos, escovação dos pelos e limpeza dos dentes. Também é importante proporcionar exercícios físicos, brincadeiras e um ambiente seguro, além de dar carinho e atenção, pois os animais também precisam de afeto para se desenvolverem de forma saudável. Todos esses cuidados ajudam a prevenir doenças, aumentam a expectativa de vida e garantem o bem-estar dos pets.</p>
+
+    <main class="site-main container">
+        <article class="pet-card">
+            <div class="image-container">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/469543211725242439" alt="Cachorro feliz correndo ao ar livre" class="pet-image">
+            </div>
+            
+            <div class="card-content">
+                <h2>Dicas e informações para cuidar melhor do seu pet</h2>
+                <p>Os cuidados com pets são fundamentais para garantir que os animais vivam com saúde, segurança e qualidade de vida. Isso inclui oferecer uma alimentação equilibrada, água limpa e fresca, manter a vacinação e a vermifugação em dia, realizar consultas periódicas com o médico-veterinário e cuidar da higiene, como banhos, escovação dos pelos e limpeza dos dentes.</p>
+                
+                <p>Também é importante proporcionar exercícios físicos, brincadeiras e um ambiente seguro, além de dar carinho e atenção, pois os animais também precisam de afeto para se desenvolverem de forma saudável. Todos esses cuidados ajudam a prevenir doenças, aumentam a expectativa de vida e garantem o bem-estar dos pets.</p>
+                
+                <div class="interaction-area">
+                    <button class="like-button" onclick="this.classList.toggle('liked')">
+                        <i class="fa-solid fa-heart"></i> 
+                        <span>Curtir</span>
+                    </button>
+                </div>
+            </div>
+        </article>
     </main>
-</bod
+
+    <footer class="site-footer">
+        <p>&copy; Guia de Cuidados com Pets. Desenvolvido para o portfólio do GitHub.</p>
+    </footer>
+
+</body>
 </html>
