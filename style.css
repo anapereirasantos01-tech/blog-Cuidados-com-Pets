@@ -1,23 +1,11 @@
-/* Reset básico e variáveis de tema */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* O PADRÃO AGORA É MODO ESCURO */
 :root {
-    --bg-color: #f4f7f6;
-    --card-bg: #ffffff;
-    --text-color: #333333;
-    --header-bg: #2e7d32;
-    --header-text: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.12);
-    --btn-bg: #e0e0e0;
-    --btn-text: #333333;
-    --like-active: #e91e63;
-}
-
-body.dark-mode {
     --bg-color: #121212;
     --card-bg: #1e1e1e;
     --text-color: #e0e0e0;
@@ -26,6 +14,19 @@ body.dark-mode {
     --shadow-color: rgba(0, 0, 0, 0.6);
     --btn-bg: #333333;
     --btn-text: #ffffff;
+    --like-active: #e91e63;
+}
+
+/* MODO CLARO (Ativado via botão) */
+body.light-mode {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --header-bg: #2e7d32;
+    --header-text: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --btn-bg: #e0e0e0;
+    --btn-text: #333333;
 }
 
 body {
@@ -58,11 +59,7 @@ body {
     gap: 20px;
 }
 
-.header-text h1 {
-    margin-bottom: 10px;
-}
-
-/* Botão de Modo Escuro */
+/* Botão de Troca de Tema */
 .theme-toggle-btn {
     background-color: var(--btn-bg);
     color: var(--btn-text);
@@ -77,24 +74,23 @@ body {
     justify-content: center;
     flex-shrink: 0;
     box-shadow: 0 2px 8px var(--shadow-color);
-    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .theme-toggle-btn:hover {
     transform: scale(1.1);
 }
 
-/* Main Content & Card */
+/* Card Principal e Sombras */
 .site-main {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .pet-card {
     background-color: var(--card-bg);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 20px var(--shadow-color);
+    box-shadow: 0 8px 20px var(--shadow-color); /* Caixa de sombra */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -124,7 +120,7 @@ body {
     text-align: justify;
 }
 
-/* Botão de Curtir */
+/* Botão Curtir */
 .interaction-area {
     margin-top: 20px;
 }
@@ -140,11 +136,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
-}
-
-.like-button:active {
-    transform: scale(0.95);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .like-button.liked {
@@ -152,7 +144,7 @@ body {
     background-color: var(--like-active);
 }
 
-/* Footer */
+/* Rodapé */
 .site-footer {
     background-color: var(--card-bg);
     text-align: center;
