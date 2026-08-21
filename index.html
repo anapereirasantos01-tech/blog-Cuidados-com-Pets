@@ -11,11 +11,10 @@
 
     <header class="site-header">
         <div class="container header-container">
-            <div>
+            <div class="header-text">
                 <h1>Cuidados com Pets</h1>
                 <p>Os cuidados com pets são essenciais para garantir a saúde, o bem-estar e a qualidade de vida dos animais de estimação. Isso inclui oferecer alimentação adequada, água limpa, higiene, vacinação, consultas veterinárias, exercícios físicos e muito carinho.</p>
             </div>
-            <!-- Botão do Modo Escuro -->
             <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar modo escuro">
                 <i class="fa-solid fa-moon"></i>
             </button>
@@ -35,7 +34,7 @@
                 <p>Também é importante proporcionar exercícios físicos, brincadeiras e um ambiente seguro, além de dar carinho e atenção, pois os animais também precisam de afeto para se desenvolverem de forma saudável. Todos esses cuidados ajudam a prevenir doenças, aumentam a expectativa de vida e garantem o bem-estar dos pets.</p>
                 
                 <div class="interaction-area">
-                    <button class="like-button" onclick="this.classList.toggle('liked')">
+                    <button class="like-button" id="like-btn">
                         <i class="fa-solid fa-heart"></i> 
                         <span>Curtir</span>
                     </button>
@@ -51,22 +50,6 @@
         </div>
     </footer>
 
-    <!-- Script para funcionalidade do Modo Escuro -->
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const themeIcon = themeToggleBtn.querySelector('i');
-
-        themeToggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            
-            if (document.body.classList.contains('dark-mode')) {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
